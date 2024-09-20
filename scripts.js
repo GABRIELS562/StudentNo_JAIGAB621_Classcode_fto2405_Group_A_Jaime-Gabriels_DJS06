@@ -42,3 +42,14 @@ console.log(uppercasedProvinces);
 //Name Lengths
 const nameLenghts = names.map((name) => name.length);
 console.log(nameLenghts);
+
+//Filtering Cape
+
+const nonCapeProvinces = provinces.filter(
+	(province) => !province.includes("Cape")
+);
+console.log(nonCapeProvinces.length);
+
+//Sorting
+const sortedProvinces = [...provinces].sort();
+console.log(sortedProvinces);
